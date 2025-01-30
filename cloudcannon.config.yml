@@ -1,5 +1,5 @@
 _schema: _schema
-source: /my-vite-app/
+source: /cannon/
 paths:
   uploads: uploads
   static: ''
