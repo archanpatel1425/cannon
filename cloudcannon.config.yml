@@ -25,16 +25,8 @@ markdown:
     attributes: false
 
 collections:
-  pages:
-    path: content/pages.json
-    label: Pages
-    format: json
-    schema:
-      title: Title
-      description: Description
-      content: Content
   home:
-    path: public/content/home.json   # Path to home.json file
+    path: public/content/home.json   # Path to the home.json file
     label: Home Content
     format: json
     schema:
