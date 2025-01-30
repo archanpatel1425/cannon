@@ -23,3 +23,5 @@ markdown:
     superscript: false
     heading_ids: false
     attributes: false
+build:
+  output: dist/
