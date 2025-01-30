@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-const Home = () => {
+const HomePage = () => {
   const [homeData, setHomeData] = useState(null);
 
   useEffect(() => {
-    fetch('/content/home.json')
+    fetch('/content/home.json')  // Now accessible from public folder
       .then(response => response.json())
       .then(data => setHomeData(data));
   }, []);
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
