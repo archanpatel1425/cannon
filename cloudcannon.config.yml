@@ -24,4 +24,5 @@ markdown:
     heading_ids: false
     attributes: false
 build:
+  command: "npm install && npm run build"
   output: dist/
