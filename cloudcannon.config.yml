@@ -34,13 +34,13 @@ collections:
       description: Description
       content: Content
   home:
-    path: src/lib/home.json
+    path: content/home.json
     label: Home Content
     format: json
     schema:
       title: Home Page Title
       description: Home Page Description
-      js_file: hom.js   
+      content: Content  
 
 build:
   command: "npm install && npm run build"
