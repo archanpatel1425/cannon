@@ -23,6 +23,25 @@ markdown:
     superscript: false
     heading_ids: false
     attributes: false
+
+collections:
+  pages:
+    path: content/pages.json
+    label: Pages
+    format: json
+    schema:
+      title: Title
+      description: Description
+      content: Content
+  home:
+    path: src/lib/home.json
+    label: Home Content
+    format: json
+    schema:
+      title: Home Page Title
+      description: Home Page Description
+      js_file: hom.js   
+
 build:
   command: "npm install && npm run build"
   output: "dist/"
