@@ -1,5 +1,5 @@
 _schema: _schema
-source: /cannon/
+source: /
 paths:
   uploads: uploads
   static: ''
@@ -34,7 +34,7 @@ collections:
       description: Description
       content: Content
   home:
-    path: public/content/home.json  # Path to your home.json file
+    path: public/content/home.json  
     label: Home Content
     format: json
     schema:
@@ -42,13 +42,13 @@ collections:
       description: Home Page Description
       content: Content
   about:
-    path: public/content/about.json  # Path to your about.json file
+    path: public/content/about.json  
     label: About Page Content
     format: json
     schema:
       title: About Page Title
       description: About Page Description
-      content: Content  # Editable content for the about page
+      content: Content  
 
 build:
   command: "npm install && npm run build"
