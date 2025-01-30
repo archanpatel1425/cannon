@@ -1,32 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
 
-const HomePage = () => {
-  const [homeData, setHomeData] = useState(null);
-
-  useEffect(() => {
-    fetch('/content/home.json')  // Access the JSON file from public folder
-      .then(response => response.json())
-      .then(data => setHomeData(data));
-  }, []);
-
-  if (!homeData) return <div>Loading...</div>;
-
+function App() {
   return (
-    <div className="home-page">
-      <h1>{homeData.title}</h1>
-      <p>{homeData.description}</p>
-      <div>{homeData.content}</div>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
-};
-
-const App = () => {
-  return (
-    <div className="App">
-      <HomePage />
-    </div>
-  );
-};
+}
 
 export default App;
+

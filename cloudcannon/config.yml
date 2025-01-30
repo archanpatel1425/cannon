@@ -25,14 +25,30 @@ markdown:
     attributes: false
 
 collections:
+  pages:
+    path: content/pages.json
+    label: Pages
+    format: json
+    schema:
+      title: Title
+      description: Description
+      content: Content
   home:
-    path: public/content/home.json   # Path to the home.json file
+    path: public/content/home.json  # Path to your home.json file
     label: Home Content
     format: json
     schema:
       title: Home Page Title
       description: Home Page Description
-      content: Content  # Editable content for the homepage
+      content: Content
+  about:
+    path: public/content/about.json  # Path to your about.json file
+    label: About Page Content
+    format: json
+    schema:
+      title: About Page Title
+      description: About Page Description
+      content: Content  # Editable content for the about page
 
 build:
   command: "npm install && npm run build"
